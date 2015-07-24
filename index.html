@@ -1,63 +1,38 @@
-<html>
-    <head>
-    	<meta name="google-site-verification" content="-b5pIeozSxQpIjUztiA5w0GYCffNk4AW3gvjl-ONfl0" />
-		<meta name="robots" content="index, follow" />
-    	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
-    	
-    	<!-- 
-    	Using the picturefill.js polyfill to be able to serve responsive images.
-    	http://scottjehl.github.io/picturefill/ -> see <picture> below. 
-    	-->
-        <script>
-            // Picture element HTML5 shiv
-            document.createElement( "picture" );
-        </script>
-       	<script src="https://cdn.rawgit.com/scottjehl/picturefill/3.0/dist/picturefill.min.js" async></script>
-       	
-    	<link rel="stylesheet" type="text/css" href="css/main.css" />
-    	
-        <link rel="stylesheet" type="text/css" 
-            href="http://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700|Abril+Fatface">
-    </head>
-    <body>
-        <div id="right-container">
-	        <div id="mid-container">
-		        <div id="left-container">
-		            <a href="https://dota.oblio360.com/">
-			            <div id="left-column">
-                            <h1 id="dota-title">Dota</h1>
-                            <picture>
-                                <source srcset="images/dota-large.png" media="(min-width: 1000px)">
-                                <img srcset="images/dota-small.png" alt="Dota blog.">
-                            </picture>
-			            </div>
-			        </a>
-			        <a href="https://hearthstone.oblio360.com/">
-			            <div id="mid-column">
-                            <h1 id="hearthstone-title">Hearth&shy;stone</h1>
-                            <picture>
-                                <source srcset="images/hearthstone-test.png" media="(min-width: 1000px)">
-                                <img srcset="images/hearthstone-small.png" alt="Hearthstone blog.">
-                            </picture>
-			            </div>
-			        </a>
-			        <a href="https://blog.oblio360.com">
-			            <div id="right-column">
-                            <h1 id="oblio-title">Blog</h1>
-                            <picture>
-                                <source srcset="images/oblio-large.png" media="(min-width: 1000px)">
-                                <img srcset="images/oblio-small.png" alt="Oblio's personal blog.">
-                            </picture>
-			            </div>
-			        </a>
-		        </div>
-	        </div>
+---
+layout: default
+title: Oblio360
+---
+
+<div id="right-container">
+    <div id="mid-container">
+        <div id="left-container">
+            <a href="https://dota.oblio360.com/">
+	            <div id="left-column">
+                    <h1 id="dota-title">Dota</h1>
+                    <picture>
+                        <source srcset="images/dota-large.png" media="(min-width: 1000px)">
+                        <img srcset="images/dota-small.png" alt="Dota blog.">
+                    </picture>
+	            </div>
+	        </a>
+	        <a href="https://hearthstone.oblio360.com/">
+	            <div id="mid-column">
+                    <h1 id="hearthstone-title">Hearth&shy;stone</h1>
+                    <picture>
+                        <source srcset="images/hearthstone-test.png" media="(min-width: 1000px)">
+                        <img srcset="images/hearthstone-small.png" alt="Hearthstone blog.">
+                    </picture>
+	            </div>
+	        </a>
+	        <a href="https://blog.oblio360.com">
+	            <div id="right-column">
+                    <h1 id="oblio-title">Blog</h1>
+                    <picture>
+                        <source srcset="images/oblio-large.png" media="(min-width: 1000px)">
+                        <img srcset="images/oblio-small.png" alt="Oblio's personal blog.">
+                    </picture>
+	            </div>
+	        </a>
         </div>
-        <div id="footer">
-            &copy;{{ site.time | date: '%Y' }} Oblio 360
-            <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">
-                <img alt="Creative Commons License" style="display: inline-block; border-width: 0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png" />
-            </a>
-        </div>
-    </body>
-</html>
+    </div>
+</div>
