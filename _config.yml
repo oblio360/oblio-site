@@ -1,0 +1,19 @@
+# Dependencies
+markdown:         redcarpet
+gems:		  
+- jemoji
+
+# Permalinks
+permalink:        pretty
+
+# Setup
+title:            'Oblio 360, online home of oblio.'
+tagline:          '360 degrees of oblio.'
+description:      'The place you go when you want to see what oblio is thinking about.'
+url:              http://.oblio360.com
+
+author:
+  name:           'Constantin Caraivan'
+  url:            https://twitter.com/oblio360
+
+paginate:         5
