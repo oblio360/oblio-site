@@ -1,29 +1,77 @@
 html {
     height: 100%;
+    padding: 0;
+    margin: 0;
 }
 
 body {
-	margin:0;
-	padding:0;
-	height: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
 }
 
 /* Headings */
-h1, h2, h3, h4, h5, h6 {
-    margin-top: 5rem;
-    line-height: 2;
-    color: #313131;
-    text-rendering: optimizeLegibility;
+h1 {
+    /*font-family: 'Molengo', Georgia, Times, serif;*/
+    font-family: Ubuntu;
     text-align: center;
-    font-family: 'Molengo', Georgia, Times, serif;
-    font-size: 250%;
+    font-size: 400%;
 }
 
-img {
+img.logo {
     display: block;
     margin-left: auto;
     margin-right: auto;
 }
+
+#left-column {
+    float: left;
+    width: 33%;
+    height: 96%;
+
+}
+
+#left-content {
+    height: 96%;
+    margin: 10px;
+    /* background: #b71c1c;*/
+    /* background-image: linear-gradient(to bottom, #3E2723 0%, #DD2C00 100%); */
+    box-shadow: 0px 5px 0px 0px white, 0px -5px 0px 0px white, 10px 15px 10px -5px #888888, -10px 15px 10px -5px #888888
+}
+
+#dota-header {
+    display: table;
+    height: 10%;
+    width: 100%;
+    background: #850303;
+}
+
+#mid-column {
+    display: inline-block;
+    width: 34%;
+    height: 96%;
+}
+
+#mid-content {
+    height: 96%;
+    border: 10px solid #ffffff;
+    background: #ffd600;
+    background-image: linear-gradient(to top, #FFD080 70%, #fdd835 100%);
+}
+
+#right-column {
+    float: right;
+    width: 33%;
+    height: 96%;
+}
+
+#right-content {
+    height: 96%;
+    border: 10px solid #ffffff;
+    background: #2962ff;
+    background-image: linear-gradient(to top, #1a237e 0%, #2962ff 100%);
+}
+
 
 #dota-title {
     color: #ffffff;
@@ -38,13 +86,15 @@ img {
 }
 
 #footer {
-	clear:both;
-	float:left;
-	width:100%;
-	text-align: center;
-	background-color: #494949;
-	color: #ffffff;
-	margin-top: 1px;
+    clear: both;
+    float: left;
+    width: 100%;
+    height: 4%;
+    text-align: center;
+    background-color: #bdbdbd;
+    color: #ffffff;
+    margin-top: 1px;
+    font-family: 'Molengo', Georgia, Times, serif;
 }
 
 #license {
@@ -52,57 +102,3 @@ img {
     border-width: 0;
     vertical-align: middle;
 }
-
-/* 3-columns. */
-#right-container {
-	clear:left;
-	float:left;
-	width:100%;
-	height: 100%;
-	overflow:hidden;
-	background:#ffffff;
-}
-
-#mid-container {
-	clear:left;
-	float:left;
-	width:100%;
-	height: 100%;
-	position:relative;
-	right:33.333%;
-	background:#2882cd;	
-}
-
-#left-container {
-	float:left;
-	width:100%;
-	height: 100%;
-	position:relative;
-	right:33.33%;
-	background:#850303;
-}
-
-#left-column {
-	float:left;
-	width:29.33%;
-	position:relative;
-	left:68.67%;
-	overflow:hidden;
-}
-
-#mid-column {
-	float:left;
-	width:29.33%;
-	position:relative;
-	left:72.67%;
-	overflow:hidden;
-}
-
-#right-column {
-	float:left;
-	width:29.33%;
-	position:relative;
-	left:76.67%;
-	overflow:hidden;
-}
-/* End of 3-columns. */
