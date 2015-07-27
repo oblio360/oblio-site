@@ -1,104 +1,106 @@
-html {
-    height: 100%;
-    padding: 0;
+* {
     margin: 0;
+    padding: 0;
+    font-family: Ubuntu, sans-serif;
 }
 
-body {
+html, body {
     height: 100%;
-    padding: 0;
-    margin: 0;
+    width: 100%;
 }
 
 /* Headings */
 h1 {
-    /*font-family: 'Molengo', Georgia, Times, serif;*/
-    font-family: Ubuntu;
-    text-align: center;
-    font-size: 400%;
+    color: #ffffff;
 }
 
-img.logo {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+#header {
+    height: 10%;
+    width: 100%;
+}
+
+#content {
+    width: 100%;
+    display: table;
+    table-layout: fixed;
+    /* Leave room for the footer. */
+    height: 82%;
+}
+
+#row {
+    display: table-row;
 }
 
 #left-column {
-    float: left;
-    width: 33%;
-    height: 96%;
-
-}
-
-#left-content {
-    height: 96%;
-    margin: 10px;
-    /* background: #b71c1c;*/
-    /* background-image: linear-gradient(to bottom, #3E2723 0%, #DD2C00 100%); */
-    box-shadow: 0px 5px 0px 0px white, 0px -5px 0px 0px white, 10px 15px 10px -5px #888888, -10px 15px 10px -5px #888888
-}
-
-#dota-header {
-    display: table;
-    height: 10%;
-    width: 100%;
+    display: table-cell;
+    height: 100%;
+    width: 30%;
     background: #850303;
+    /*box-shadow: 10px 15px 10px -5px #888888, -10px 15px 10px -5px #888888;*/
+}
+
+#left-divider {
+    display: table-cell;
+    height: 100%;
+    width: 1%;
+}
+
+#dota-title {
+    height: 9%;
+}
+
+#dota-image {
+    height: 90%;
+    width: 100%;
 }
 
 #mid-column {
-    display: inline-block;
-    width: 34%;
-    height: 96%;
-}
-
-#mid-content {
-    height: 96%;
-    border: 10px solid #ffffff;
-    background: #ffd600;
-    background-image: linear-gradient(to top, #FFD080 70%, #fdd835 100%);
-}
-
-#right-column {
-    float: right;
+    display: table-cell;
+    height: 100%;
     width: 33%;
-    height: 96%;
-}
-
-#right-content {
-    height: 96%;
-    border: 10px solid #ffffff;
-    background: #2962ff;
-    background-image: linear-gradient(to top, #1a237e 0%, #2962ff 100%);
-}
-
-
-#dota-title {
-    color: #ffffff;
+    background: #ffab40;
+    /*box-shadow: 10px 15px 10px -5px #888888, -10px 15px 10px -5px #888888;*/
 }
 
 #hearthstone-title {
-    color: #ffffff;
+    height: 9%;
 }
 
-#oblio-title {
-    color: #a93a54;
+#hearthstone-image {
+    height: 90%;
+    width: 100%;
+}
+
+#right-divider {
+    display: table-cell;
+    height: 100%;
+    width: 1%;
+}
+
+#right-column {
+    display: table-cell;
+    height: 100%;
+    width: 33%;
+    background: #82b1ff;
+    /*box-shadow: 10px 15px 10px -5px #888888, -10px 15px 10px -5px #888888;*/
+}
+
+#blog-title {
+    height: 9%;
+}
+
+#blog-image {
+    height: 90%;
+    width: 100%;
 }
 
 #footer {
-    clear: both;
-    float: left;
     width: 100%;
-    height: 4%;
+    height: 8%;
     text-align: center;
     background-color: #bdbdbd;
     color: #ffffff;
-    margin-top: 1px;
-    font-family: 'Molengo', Georgia, Times, serif;
 }
 
 #license {
-    display: inline-block;
-    border-width: 0;
-    vertical-align: middle;
-}
+ }
