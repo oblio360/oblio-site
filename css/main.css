@@ -7,6 +7,7 @@
 html, body {
     height: 100%;
     width: 100%;
+    max-width: 2048px;
 }
 
 /* Headings */
@@ -16,9 +17,8 @@ h1 {
 
 .cell {
     display: table-cell;
-    border-left-style: solid;
-    border-right-style: solid;
-    border-width: 20px;
+    border-style: double;
+    border-width: 10px;
     border-color: white;
 }
 
@@ -61,10 +61,14 @@ h1 {
     display: table-row;
     height: 240px;
     width: 100%;
+    background: #eeeeee;
+    background: url("../images/header-background.jpg") no-repeat 0 0;
+    background-size: cover;
 }
 
-#header {
+.header {
     display: table-cell;
+    border-bottom: 20px solid white;
 }
 
 #content-row {
@@ -80,8 +84,8 @@ h1 {
 }
 
 .footer {
-    border-top: 20px solid white;
     display: table-cell;
+    border-top: 20px solid white;
     text-align: center;
     vertical-align: middle;
     color: #ffffff;
