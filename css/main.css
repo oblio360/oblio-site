@@ -85,7 +85,7 @@ a {
     height: 240px;
     width: 100%;
     background: #eeeeee;
-    background: url("../images/header-compressed.jpg") no-repeat 0 0;
+    background: url("../images/header-background.jpg") no-repeat 0 0;
     background-size: cover;
 }
 
