@@ -86,19 +86,8 @@ a {
     height: 240px;
     width: 100%;
     background: #eeeeee;
-    background: url("../images/header-background.jpg") no-repeat 0 0;
+    background: url("../images/header-background.jpg") no-repeat 0 0 scroll;
     background-size: cover;
-}
-
-@media(max-width: 768px) {
-    #header-row {
-        display: table-row;
-        height: 240px;
-        width: 100%;
-        background: #eeeeee;
-        background: url("../images/header-background.jpg") no-repeat 0 0 scroll;
-        background-size: cover;
-    }
 }
 
 .header {
