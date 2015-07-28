@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     font-family: Ubuntu, sans-serif;
+    color: white;
 }
 
 html, body {
@@ -11,13 +12,17 @@ html, body {
 }
 
 h1 {
-    color: white;
     font-size: 400%;
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 
+p {
+    background-color: white;
+    opacity: 0.65;
+    color: black;
+}
+
 h2 {
-    color: white;
     font-size: 200%;
 }
 
@@ -84,6 +89,12 @@ a {
     border-bottom: 20px solid white;
     text-align: center;
     vertical-align: middle;
+    padding-left: 10px;
+}
+
+#motto {
+    vertical-align: bottom;
+    padding-bottom: 10px;
 }
 
 #content-row {
@@ -103,7 +114,6 @@ a {
     border-top: 20px solid white;
     text-align: center;
     vertical-align: middle;
-    color: white;
     font-weight: bold;
 }
 
