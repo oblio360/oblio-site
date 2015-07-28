@@ -14,91 +14,99 @@ h1 {
     color: #ffffff;
 }
 
-#header {
-    height: 10%;
-    width: 100%;
+.card {
+    max-width: 100%;
+    height: 1000px;
+    margin: 10px;
+    box-shadow: 10px 15px 10px -5px #888888, -10px 15px 10px -5px #888888;
 }
 
-#content {
-    width: 100%;
+#dota {
+    background: #850303;
+}
+
+#hearthstone {
+    background: #ffab40;
+}
+
+#blog {
+    background: #82b1ff;
+}
+
+#layout {
     display: table;
     table-layout: fixed;
-    /* Leave room for the footer. */
-    height: 82%;
+    height: 100%;
+    width: 100%
 }
 
-#row {
+#header-row {
+    display: table-row;
+    height: 240px;
+    width: 100%;
+}
+
+#header {
+    display: table-cell;
+}
+
+#content-row {
     display: table-row;
 }
 
 #left-column {
     display: table-cell;
-    height: 100%;
-    width: 30%;
-    background: #850303;
-    /*box-shadow: 10px 15px 10px -5px #888888, -10px 15px 10px -5px #888888;*/
+    vertical-align: top;
 }
 
-#left-divider {
-    display: table-cell;
-    height: 100%;
-    width: 1%;
-}
 
 #dota-title {
-    height: 9%;
+    /*height: 9%;*/
 }
 
 #dota-image {
-    height: 90%;
-    width: 100%;
+    max-width: 100%;
+    max-height: 100%;
 }
 
 #mid-column {
     display: table-cell;
-    height: 100%;
-    width: 33%;
-    background: #ffab40;
-    /*box-shadow: 10px 15px 10px -5px #888888, -10px 15px 10px -5px #888888;*/
+
 }
 
 #hearthstone-title {
-    height: 9%;
+    /*height: 9%;*/
 }
 
 #hearthstone-image {
-    height: 90%;
-    width: 100%;
-}
-
-#right-divider {
-    display: table-cell;
-    height: 100%;
-    width: 1%;
+    max-width: 100%;
+    max-height: 100%;
 }
 
 #right-column {
     display: table-cell;
-    height: 100%;
-    width: 33%;
-    background: #82b1ff;
-    /*box-shadow: 10px 15px 10px -5px #888888, -10px 15px 10px -5px #888888;*/
 }
 
 #blog-title {
-    height: 9%;
+    /*height: 9%;*/
 }
 
 #blog-image {
-    height: 90%;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+#footer-row {
+    display: table-row;
+    height: 240px;
     width: 100%;
+    background-color: #bdbdbd;
 }
 
 #footer {
-    width: 100%;
-    height: 8%;
+    display: table-cell;
     text-align: center;
-    background-color: #bdbdbd;
+    vertical-align: middle;
     color: #ffffff;
 }
 
