@@ -24,7 +24,8 @@ p {
     background-color: white;
     opacity: 0.65;
     color: black;
-    font-size: 125%;
+    font-size: 115%;
+    font-style: italic;
 }
 
 h2 {
@@ -87,6 +88,17 @@ a {
     background: #eeeeee;
     background: url("../images/header-background.jpg") no-repeat 0 0;
     background-size: cover;
+}
+
+@media(max-width: 768px) {
+    #header-row {
+        display: table-row;
+        height: 240px;
+        width: 100%;
+        background: #eeeeee;
+        background: url("../images/header-background.jpg") no-repeat 0 0 scroll;
+        background-size: cover;
+    }
 }
 
 .header {
