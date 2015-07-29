@@ -28,6 +28,10 @@ p {
     font-style: italic;
 }
 
+h2 {
+    font-size: 200%;
+}
+
 
 @media screen and (max-width: 360px) {
     h1 {
@@ -38,18 +42,20 @@ p {
         color: black;
     }
 
+    h2 {
+        font-size: 150%;
+    }
+
     p {
         background-color: white;
         opacity: 0.65;
         color: black;
-        font-size: 100%;
+        font-size: 70%;
         font-style: italic;
     }
 }
 
-h2 {
-    font-size: 200%;
-}
+
 
 a {
     text-decoration: none;
@@ -100,7 +106,7 @@ a {
 
 #header-row {
     display: table-row;
-    height: 240px;
+    height: 200px;
     width: 100%;
 }
 
@@ -125,7 +131,7 @@ a {
 
 #footer-row {
     display: table-row;
-    height: 240px;
+    height: 200px;
     width: 100%;
     background: #9e9e9e url("../images/pattern.png") repeat 0 0;
     opacity: 0.8;
