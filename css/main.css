@@ -117,7 +117,6 @@ a {
     vertical-align: middle;
     padding-left: 20px;
     background: #9e9e9e url("../images/pattern.png") repeat 0 0;
-    opacity: 0.8;
 }
 
 #motto {
@@ -134,7 +133,6 @@ a {
     height: 200px;
     width: 100%;
     background: #9e9e9e url("../images/pattern.png") repeat 0 0;
-    opacity: 0.8;
 }
 
 .footer {
