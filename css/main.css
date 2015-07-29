@@ -33,7 +33,7 @@ h2 {
 }
 
 
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 420px) {
     h1 {
         width: 100%;
         font-size: 200%;
