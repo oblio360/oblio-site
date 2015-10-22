@@ -203,7 +203,7 @@ tbody tr:nth-child(odd) td, tbody tr:nth-child(odd) th {
 .sidebar {
     text-align: center;
     vertical-align: top;
-    padding: 0rem 2rem 0rem 1rem;
+    padding: 0rem 1rem 0rem 1rem;
 }
 @media (min-width: 48rem) {
   .sidebar {
@@ -211,6 +211,15 @@ tbody tr:nth-child(odd) td, tbody tr:nth-child(odd) th {
       width: 18rem;
       text-align: left;
   }
+}
+
+/* Adding a fixed position container that will stay on the screen as the page scrolls. */
+@media(min-width: 38rem) {
+    .sliding-container {
+        position: fixed;
+        top: 0px;
+        left: 20px;
+    }
 }
 
 .logo-container {
@@ -312,8 +321,8 @@ a.license:hover, a.license:focus {
 @media (min-width: 48rem) {
   .content {
     display: table-cell;
-    max-width: 30rem;
-    padding: 4rem 2rem;
+    max-width: 24rem;
+    padding: 1rem 1rem;
   }
 }
 
@@ -321,6 +330,6 @@ a.license:hover, a.license:focus {
   .content {
     display: table-cell;
     max-width: 46rem;
-    padding: 4rem 2rem;
+    padding: 2rem 2rem;
   }
 }
