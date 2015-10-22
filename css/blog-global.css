@@ -236,6 +236,7 @@ tbody tr:nth-child(odd) td, tbody tr:nth-child(odd) th {
     padding: 0.2em;
     margin-top: 0.3em;
     margin-bottom: 0.3em;
+    opacity: 0.9;
 }
 
 .menu-separator {
