@@ -308,6 +308,17 @@ a.license:hover, a.license:focus {
     width: 20px;
 }
 
+.adslot_1  {
+    text-align: center;
+    height: 100px;
+}
+
+@media (min-height: 1100px) {
+  .adslot_1 {
+    height: 280px;
+  }
+}
+
 @media (min-width: 48rem) {
   .content {
     display: table-cell;
