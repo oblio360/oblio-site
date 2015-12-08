@@ -271,19 +271,6 @@ tbody tr:nth-child(odd) td, tbody tr:nth-child(odd) th {
     text-decoration: underline;
 }
 
-.adslot_1  {
-    text-align: center;
-    width: 280px;
-    height: 100px;
- }
-
-@media (min-height: 1100px) {
-  .adslot_1 {
-    width: 280px;
-    height: 550px;
-  }
-}
-
 @media(max-width: 48rem) {
     .archive-box {
         width: 260px;
