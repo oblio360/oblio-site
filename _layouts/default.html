@@ -4,9 +4,10 @@
     {% include head.html %}
   
     <body>
-        <div id="layout">
+        <div class="layout">
             {% include header.html %}
-            {{ content }}
+            {% include cards.html %}
+            {% include sidebar.html %}
             {% include footer.html %}
         </div>
     </body>
