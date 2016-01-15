@@ -18,3 +18,21 @@ $.ajax({
         console.log(error);
     }
 });
+
+$.ajax({
+    url: "http://hearthstone.oblio360.com/api/tags.json",
+    success: function( data ) {
+        for(tag in data.tags) {
+            name = tag;
+            url = data.tags[tag];
+            if(name !== "") {
+                tag_link = "<div class='article-tag'><a href=\"" + url + "\">" + name + "</a></div>";
+                console.log(tag_link);
+                $(".tag-card").append(tag_link);
+            }
+        }
+    },
+    error: function(errorjqXHR, error, errorThrown) {
+        console.log(error);
+    }
+});

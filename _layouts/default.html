@@ -6,8 +6,10 @@
     <body>
         <div class="layout">
             {% include header.html %}
-            {% include cards.html %}
-            {% include sidebar.html %}
+            <div class="content">
+                {% include cards.html %}
+                {% include sidebar.html %}
+            </div>
             {% include footer.html %}
         </div>
     </body>

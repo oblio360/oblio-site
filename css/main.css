@@ -20,10 +20,23 @@ a {
     text-decoration: none;
 }
 
-.image {
-    max-width: 100%;
-    max-height: 100%;
+img {
+    height: 100%;
+    width: 100%;
 }
+
+hr {
+    position: relative;
+    margin: 0.5em 0;
+    border: 0;
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #dedede;
+}
+
+/*.image {*/
+    /*max-width: 100%;*/
+    /*max-height: 100%;*/
+/*}*/
 
 .layout {
     height: 100%;
@@ -31,20 +44,50 @@ a {
 }
 
 .header {
-    height: 200px;
+    height: 240px;
     width: 100%;
+    background-image: url("/images/reference/header-small.jpg");
+    background-repeat: no-repeat;
+    background-size: auto 100%;
 }
 
 .logo {
-    margin-top: 1em;
+    display: inline-block;
+    margin-top: 0.5em;
     margin-left: 1em;
-    margin-bottom: 1em;
+    margin-right: 1em;
+    padding-left: 1em;
+    padding-right: 1em;
+    background-color: rgba(255, 255, 255, 0.6);
+    box-shadow: 0 1px 3px #909090;
+}
+
+.motto-container {
+    padding-top: 1em;
+    padding-bottom: 1em;
+    height: 3em;
+    width: 100%;
 }
 
 .motto {
+    float: right;
     margin-left: 1em;
+    margin-right: 1em;
+    padding: 0.3em;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 1px 3px #909090;
+    font-family: 'Montserrat', sans-serif;
 }
 
+.content {
+    width: 100%;
+    min-height: 1000px;
+}
+
+.cards {
+    float: left;
+}
 @media(max-width: 639px) {
     .cards {
         width: 300px;
@@ -148,11 +191,11 @@ a {
     color: #515151;
 }
 
-.sidebar {
-    width: 200px;
-    position: fixed;
-    top: 110px;
-    right: 0;
+#story {
+    width: 100%;
+    text-align: justify;
+    background-color: rgba(255, 255, 255, 0.4);
+    box-shadow: 0 1px 3px #909090;
 }
 
 #dota {
@@ -176,5 +219,40 @@ a {
     background-size: cover;
 }
 
+
+.sidebar {
+    width: 360px;
+    float: right;
+    margin-top: 1em;
+    padding-left: 2em;
+    padding: 1em;
+    background-color: rgba(255, 255, 255, 0.4);
+    box-shadow: 0 1px 3px #909090;
+}
+@media(max-width: 1199px) {
+    .sidebar {
+        display: none;
+    }
+}
+
+.tag-card {
+    padding: 0.2em;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+}
+
+.article-tag {
+    display: inline;
+    padding: 0.2em;
+    margin: 0.5em;
+    line-height: 2em;
+    box-shadow: 0 0.5px 3px #909090;
+}
+
+.article-tag a {
+    color: #3e3e3e;
+}
+
 .footer {
+    display: block;
 }
