@@ -41,7 +41,7 @@ hr {
 .header {
     height: 255px;
     width: 100%;
-    background-image: url("/images/reference/header-small.jpg");
+    background-image: url("/images/header-small.jpg");
     background-repeat: no-repeat;
     background-size: auto 100%;
 }
@@ -203,31 +203,32 @@ hr {
 
 #dota-card {
     background: #850303;
-    background-image: url("/images/reference/windrunner-small.png");
+    background-image: url("/images/windrunner-small.png");
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 #hearthstone-card {
     background: #ffab40;
-    background-image: url("/images/reference/hellfire-small.jpg");
+    background-image: url("/images/hellfire-small.jpg");
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 #blog-card {
     background: #82b1ff;
-    background-image: url("/images/reference/sky-small.jpg");
+    background-image: url("/images/sky-small.jpg");
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 .tag-container {
-    width: 360px;
-    float: right;
-    margin-top: 1em;
+    width: 400px;
+    float: left;
+    margin-top: 4em;
+    margin-left: 8em;
+    padding: 3em;
     padding-left: 2em;
-    padding: 1em;
     background-color: rgba(255, 255, 255, 0.4);
     box-shadow: 0 1px 3px #909090;
 }
@@ -247,12 +248,13 @@ hr {
     display: inline;
     padding: 0.2em;
     margin: 0.5em;
-    line-height: 2em;
+    line-height: 4em;
     box-shadow: 0 0.5px 1.5px #909090;
 }
 
 .article-tag a {
     color: #3e3e3e;
+    padding: 0.5em;
 }
 
 
@@ -290,4 +292,21 @@ hr {
 
 .footer {
     display: block;
+    text-align: center;
+    padding-top: 10px;
+}
+
+@media(max-height: 600px) {
+    .license-box {
+        padding-top: 0;
+    }
+}
+
+a.license:hover, a.license:focus {
+    text-decoration: none;
+}
+
+.license-image {
+    height: 20px;
+    width: 20px;
 }
