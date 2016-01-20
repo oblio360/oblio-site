@@ -85,18 +85,21 @@ hr {
 .cards {
     float: left;
 }
-@media(max-width: 639px) {
+@media(max-width: 439px) {
     .cards {
         width: 300px;
     }
 }
-
+@media(min-width: 440px) and (max-width: 639px) {
+    .cards {
+        width: 400px;
+    }
+}
 @media(min-width: 640px) and (max-width: 1199px) {
     .cards {
         width: 500px;
     }
 }
-
 @media(min-width: 1200px) {
     .cards {
         width: 700px;
@@ -227,13 +230,13 @@ hr {
     width: 400px;
     float: left;
     margin-top: 4em;
-    margin-left: 8em;
-    padding: 3em;
+    margin-left: 6em;
+    padding: 2em;
     padding-left: 2em;
     background-color: rgba(255, 255, 255, 0.4);
     box-shadow: 0 1px 3px #909090;
 }
-@media(max-width: 1199px) {
+@media(max-width: 1359px) {
     .tag-container {
         display: none;
     }
@@ -249,7 +252,7 @@ hr {
     display: inline;
     padding: 0.2em;
     margin: 0.5em;
-    line-height: 4em;
+    line-height: 3em;
     box-shadow: 0 0.5px 1.5px #909090;
 }
 
@@ -262,9 +265,7 @@ hr {
 .sidebar-social {
     display: none;
 }
-@media (min-width: 680px) and (max-width: 760px),
-    (min-width: 840px) and (max-width: 1190px),
-    (min-width: 1260px) {
+@media (min-width: 380px) {
     .sidebar-social {
         display: block;
         width: 70px;
