@@ -134,8 +134,9 @@ hr {
 
 .title, .description {
     color: #3e3e3e;
-    text-align: center;
 }
+
+
 
 .description {
     width: 180px;
